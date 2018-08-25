@@ -1,4 +1,16 @@
 ---
 version: 0.0.2
 loglevel: DEBUG
-logpath: logs/application.log
+logpath: Logs/application.log
+reverse_index:
+  filename: Data/Metadata/reverse.index
+documents:
+  - Data/Documents/cf74.xml
+  - Data/Documents/cf75.xml
+  - Data/Documents/cf76.xml
+  - Data/Documents/cf77.xml
+  - Data/Documents/cf78.xml
+  - Data/Documents/cf79.xml
+preprocessing:
+  stemmer: true
+  min_word_size: 2
