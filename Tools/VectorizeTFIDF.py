@@ -22,3 +22,6 @@ class VectorizeTFIDF:
 
     def terms_to_dev(self, terms):
         return [self._tfidf(word, terms) for word in self.reverseIndex.words]
+
+def vectorize(reverseIndex, docs_tokens):
+    return VectorizeTFIDF(reverseIndex, len(docs_tokens)).vectorize(docs_tokens)

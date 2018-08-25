@@ -6,7 +6,8 @@ from Tools.Logger import logger
 from Tools.Document import Document
 from Tools.Preprocessing import Preprocessing
 from Tools.ReverseIndex import ReverseIndex
-from Tools.VectorizeTFIDF import VectorizeTFIDF
+from Tools.VectorizeTFIDF import vectorize
+from Tools.Model import Model
 
 logger.info('Starting Application')
 
@@ -17,6 +18,9 @@ reverseIndex = ReverseIndex()
 reverseIndex.create(documents)
 reverseIndex.persist(CONFIG['reverse_index']['filename'])
 
-vectorize = VectorizeTFIDF(reverseIndex, len(documents))
-documents['vectorize'] = vectorize.vectorize(documents['pre'])
-print(documents['vectorize'])
+documents['vectorize'] = vectorize(reverseIndex, documents['pre'])
+
+documents[['id', 'vectorize']].to_csv(CONFIG['path_to_vectors'])
+
+model = Model(reverseIndex)
+model.fit(documents['vectorize'], documents['id'])
