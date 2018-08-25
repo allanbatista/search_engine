@@ -10,15 +10,15 @@ class ReverseIndex:
         self.count_documents_in_word = {}
         self.words = []
 
-    def create(self, documents):
+    def create(self, X, y):
         self.index = {}
 
-        for id, tokens in documents[['id', 'pre']].values:
-            for token in tokens:
+        for index in len(X):
+            for token in X[index]:
                 try:
-                    self.index[token].append(id)
+                    self.index[token].append(y[index])
                 except:
-                    self.index[token] = [id]
+                    self.index[token] = [y[index]]
 
         self.load_envs()
 
