@@ -1,7 +1,7 @@
 ---
 version: 0.0.2
 loglevel: DEBUG
-logpath: Logs/application.log
+#logpath: Logs/application.log
 reverse_index:
   filename: Data/Metadata/reverse_index.csv
 documents:

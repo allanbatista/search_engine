@@ -18,3 +18,6 @@ else:
 logfile.setFormatter(formatter)
 
 logger.addHandler(logfile)
+
+def info(message):
+    logging.log(logging.INFO, message)
