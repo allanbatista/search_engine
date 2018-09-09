@@ -3,14 +3,13 @@
 
 from Tools.Config import CONFIG, ROOT_DIR
 from Tools.Logger import logger
-from Tools.ModelCos import Model
-from Tools.Document import Document
-from Tools.Preprocessor import Preprocessor
-from Tools.VectorizeTFIDF import vectorize
+from Lib.Similarity.Cosine import Cosine
+from Lib.NLP.Preprocessor import Preprocessor
+from Lib.NLP.VectorizeTFIDF import vectorize
 
 logger.info('Starting Application')
 
-model = Model()
+model = Cosine()
 model.load(ROOT_DIR + "/" + CONFIG['models_path'])
 
 preprocessor = Preprocessor()

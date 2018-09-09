@@ -2,14 +2,13 @@
 # -*- coding: utf-8 -*-
 
 from xml.dom.minidom import parse
-from Tools.Logger import logger
-import pandas as pd
+from Tools.Config import ROOT_DIR, CONFIG
 
 
 class EvaluatorData:
 
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(self):
+        self.filename = ROOT_DIR + "/" + CONFIG['evaluation_query_path']
         self.queries = []
         self.parse_data()
 

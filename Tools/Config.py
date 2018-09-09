@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import yaml
-import os
-import sys
+from pathlib import Path
 
 CONFIG = yaml.load(open("application.yml", "r"))
-# ROOT_DIR = os.path.dirname(sys.modules['__main__'].__file__)
-ROOT_DIR = '/home/allan.batista/PycharmProjects/search_engine'
+ROOT_DIR = str(Path(__file__).parent.parent)

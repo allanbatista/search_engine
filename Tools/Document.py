@@ -4,14 +4,27 @@
 from xml.dom.minidom import parse
 from Tools.Logger import logger
 import pandas as pd
+from Tools.Config import ROOT_DIR, CONFIG
 
 
 class Document:
 
+    def __init__(self, samples=[]):
+        self.samples = samples
+        self.total = len(samples)
+
+    def persit(self):
+        self.samples.to_json(Document.path(), orient='records')
+        logger.info("Persist {} Samples".format(self.total))
+
     @classmethod
-    def load_documents(cls, filename):
-        logger.info("Load Documents {}".format(filename))
-        return pd.read_json(filename, orient='records')
+    def path(cls):
+        return ROOT_DIR + "/" + CONFIG['documents_path']
+
+    @classmethod
+    def load(cls):
+        logger.info("Load Documents")
+        return cls(samples=pd.read_json(Document.path(), orient='records'))
 
     @classmethod
     def parse_many(cls, filenames):
@@ -21,7 +34,7 @@ class Document:
             results += rs
 
         logger.info("{} Total Documents in {} files".format(len(results), len(filenames)))
-        return pd.DataFrame(results, columns=['id', 'text'])
+        return cls(samples=pd.DataFrame(results, columns=['id', 'text']))
 
     @classmethod
     def parse(cls, filename):

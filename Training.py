@@ -1,27 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from Tools.Config import CONFIG, ROOT_DIR
 from Tools.Logger import logger
 from Tools.Document import Document
-from Tools.Preprocessor import Preprocessor
-from Tools.ReverseIndex import ReverseIndex
-from Tools.VectorizeTFIDF import vectorize
-from Tools.ModelCos import Model
+from Lib.ReverseIndex import ReverseIndex
+from Lib.Similarity.Cosine import Cosine
+from Lib.Similarity.Jaccard import Jaccard
+from Lib.Similarity.Euclidian import Euclidian
 
-logger.info('Starting Training')
 
-documents = Document.parse_many(CONFIG['documents'])
-logger.info("Parsed Documents")
-documents['pre'] = Preprocessor(**CONFIG['preprocessing']).fits(documents['text'])
-logger.info("Created Normalized Documents")
-reverseIndex = ReverseIndex().create(documents['pre'].values, documents['id'].values)
-logger.info("Created Reverse Index")
-documents['vectorize'] = vectorize(reverseIndex, documents['pre'])
-logger.info("Create Vectorize")
-documents.to_json(ROOT_DIR + "/" + CONFIG['documents_path'], orient='records')
+documents = Document.load()
 
-model = Model(reverseIndex).fit(documents['vectorize'], documents['id'])
-logger.info("Trained Model")
-model.persist(ROOT_DIR + "/" + CONFIG['models_path'])
-logger.info("Persisted Model")
+logger.info("Training Cosine Model")
+model = Cosine(ReverseIndex.load())
+model.fit(documents.samples['vectorize'], documents.samples['id'])
+model.persist()
+logger.info("Persisted Cosine Model")
+
+logger.info("Training Jaccard Model")
+model = Jaccard()
+model.fit(documents.samples['vectorize'], documents.samples['id'])
+model.persist()
+logger.info("Persisted Jaccard Model")
+
+logger.info("Training Euclidian Model")
+model = Euclidian()
+model.fit(documents.samples['vectorize'], documents.samples['id'])
+model.persist()
+logger.info("Persisted Euclidian Model")

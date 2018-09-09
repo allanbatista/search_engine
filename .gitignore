@@ -103,6 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-.idea
+.idea/*
 Data/Metadata/*
 !Data/Metadata/.keep
