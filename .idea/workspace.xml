@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81472771-7a09-4690-ba98-0f6b6ca0f057" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tools/EvaluatorData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Metadata/reverse_index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Metadata/reverse_index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/ModelCos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tools/ReverseIndex.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/ReverseIndex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/Document.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/ModelCos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/ModelCos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/VectorizeTFIDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/VectorizeTFIDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +23,11 @@
     <session id="-1279845869">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -33,67 +38,122 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cos_lengths" value="1" />
-          <entry key="csv" value="3" />
+          <entry key="csv" value="9" />
           <entry key="index" value="1" />
-          <entry key="json" value="1" />
+          <entry key="json" value="5" />
           <entry key="keep" value="2" />
           <entry key="labels" value="1" />
           <entry key="log" value="1" />
-          <entry key="py" value="9" />
-          <entry key="xml" value="1" />
-          <entry key="yml" value="1" />
+          <entry key="model" value="1" />
+          <entry key="py" value="32" />
+          <entry key="xml" value="14" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="1" />
-          <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="9" />
-          <entry key="XML" value="1" />
-          <entry key="YAML" value="1" />
+          <entry key="CSV" value="7" />
+          <entry key="JSON" value="5" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="32" />
+          <entry key="XML" value="14" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="19" />
-          <entry key="py" value="4271" />
-          <entry key="yml" value="206" />
+          <entry key="dummy" value="37" />
+          <entry key="py" value="8578" />
+          <entry key="yml" value="249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="4271" />
-          <entry key="YAML" value="206" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Python" value="8578" />
+          <entry key="YAML" value="249" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding>
-                <element signature="e#47#78#0" expanded="true" />
+                <element signature="e#47#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tools/Preprocessing.py">
+        <entry file="file://$PROJECT_DIR$/Tools/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="135">
+              <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
               <folding>
                 <element signature="e#47#58#0" expanded="true" />
-                <marker date="1535206636772" expanded="true" signature="90:95" ph="..." />
-                <marker date="1535206636772" expanded="true" signature="397:467" ph="..." />
-                <marker date="1535206636772" expanded="true" signature="501:649" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tools/ModelCos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+              <folding>
+                <element signature="e#47#58#0" expanded="true" />
+                <marker date="1536432637236" expanded="true" signature="181:186" ph="..." />
+                <marker date="1536432637236" expanded="true" signature="973:1461" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tools/EvaluatorData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="109" selection-start-line="21" selection-start-column="109" selection-end-line="21" selection-end-column="109" />
+              <folding>
+                <element signature="e#47#80#0" expanded="true" />
+                <marker date="1536428280438" expanded="true" signature="302:891" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/cfquery.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="51" column="22" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding>
+                <element signature="e#47#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,46 +162,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tools/Document.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            <state>
+              <caret selection-end-line="50" />
               <folding>
                 <element signature="e#47#80#0" expanded="true" />
+                <marker date="1536418784383" expanded="true" signature="265:327" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tools/ModelCos.py">
+        <entry file="file://$PROJECT_DIR$/Data/Documents/cf74.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-              <folding>
-                <element signature="e#47#58#0" expanded="true" />
-                <marker date="1535219923532" expanded="true" signature="149:154" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tools/ReverseIndex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="e#47#78#0" expanded="true" />
-                <marker date="1535219794254" expanded="true" signature="111:116" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="11" selection-start-line="17" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="45" column="35" selection-start-line="43" selection-start-column="18" selection-end-line="45" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -154,6 +189,25 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>parse_many</find>
+      <find>loglevel</find>
+      <find>fit</find>
+      <find>count_documents_in_word</find>
+      <find>words&quot;:</find>
+      <find>one</find>
+      <find>load_documents</find>
+      <find>437</find>
+      <find>&gt;437</find>
+      <find>&lt;RECORDNUM&gt;00437</find>
+      <find>&quot;437&quot;</find>
+      <find>damag</find>
+      <find>00905</find>
+      <find>00034</find>
+      <find>Results</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -168,16 +222,20 @@
       <list>
         <option value="$PROJECT_DIR$/Tools/logging.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/Tools/Logger.py" />
-        <option value="$PROJECT_DIR$/Tools/Config.py" />
         <option value="$PROJECT_DIR$/Tools/Preprocessing.py" />
-        <option value="$PROJECT_DIR$/Tools/Document.py" />
-        <option value="$PROJECT_DIR$/Tools/VectorizeTFIDF.py" />
-        <option value="$PROJECT_DIR$/application.yml" />
-        <option value="$PROJECT_DIR$/Tools/ReverseIndex.py" />
         <option value="$PROJECT_DIR$/Tools/Model.py" />
-        <option value="$PROJECT_DIR$/Tools/ModelCos.py" />
+        <option value="$PROJECT_DIR$/Tools/Logger.py" />
+        <option value="$PROJECT_DIR$/Tools/Preprocessor.py" />
+        <option value="$PROJECT_DIR$/Tools/ReverseIndex.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/application.yml" />
+        <option value="$PROJECT_DIR$/Tools/VectorizeTFIDF.py" />
+        <option value="$PROJECT_DIR$/Training.py" />
+        <option value="$PROJECT_DIR$/Tools/Document.py" />
+        <option value="$PROJECT_DIR$/Evaluation.py" />
+        <option value="$PROJECT_DIR$/Tools/Config.py" />
+        <option value="$PROJECT_DIR$/Tools/EvaluatorData.py" />
+        <option value="$PROJECT_DIR$/Tools/ModelCos.py" />
       </list>
     </option>
   </component>
@@ -195,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,14 +269,22 @@
             <path>
               <item name="search_engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="search_engine" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+              <item name="Metadata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="search_engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="search_engine" type="462c0819:PsiDirectoryNode" />
               <item name="Tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="con&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/Config.py&#10;Doc&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/Document.py&#10;tr&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Training.py&#10;rever&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ReverseIndex.py&#10;Docu&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/Document.py&#10;reve&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ReverseIndex.py&#10;model&#9;null&#9;null&#10;re&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ReverseIndex.py&#10;rev&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ReverseIndex.py&#10;app&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/application.yml&#10;main&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Main.py&#10;mode&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ModelCos.py&#10;Re&#9;FILE&#9;file:///home/allan.batista/PycharmProjects/search_engine/Tools/ReverseIndex.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,7 +306,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Evaluation">
+    <configuration name="Evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="search_engine" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Training" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="search_engine" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Training.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="search_engine" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -261,8 +370,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Training" />
+      <item itemvalue="Python.Evaluation" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Evaluation" />
+        <item itemvalue="Python.Training" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -281,22 +397,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-11" width="1319" height="780" extended-state="6" />
+    <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1494886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28324154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996066" weight="0.32919255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32919255" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003934" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -305,19 +421,19 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24940991" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28324154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996066" visible="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32919255" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32919255" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003934" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -333,16 +449,6 @@
     <entry file="file://$PROJECT_DIR$/Logs/.keep">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Documents/cf74.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/Logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logs/application.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -351,55 +457,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Data/Metadata/reverse.index" />
     <entry file="file://$PROJECT_DIR$/Data/Metadata/vectors.json" />
-    <entry file="file://$PROJECT_DIR$/Tools/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/VectorizeTFIDF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <marker date="1535214461955" expanded="true" signature="80:81" ph="..." />
-            <marker date="1535214461955" expanded="true" signature="232:305" ph="..." />
-            <marker date="1535214461955" expanded="true" signature="746:747" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/Preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <element signature="e#47#58#0" expanded="true" />
-            <marker date="1535206636772" expanded="true" signature="90:95" ph="..." />
-            <marker date="1535206636772" expanded="true" signature="397:467" ph="..." />
-            <marker date="1535206636772" expanded="true" signature="501:649" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/Document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="e#47#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" selection-start-line="17" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/Metadata/model.cos_lengths">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
@@ -409,37 +466,205 @@
     <entry file="file://$PROJECT_DIR$/Data/Metadata/reverse_index.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Metadata/vectors.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tools/ModelCos.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1247971764/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="135">
+          <caret line="4966" column="8" selection-start-line="4966" selection-start-column="8" selection-end-line="4966" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/Logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="49" />
           <folding>
-            <element signature="e#47#58#0" expanded="true" />
-            <marker date="1535219923532" expanded="true" signature="149:154" ph="..." />
+            <marker date="1536409144450" expanded="true" signature="483:488" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/Preprocessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+            <marker date="1536410922526" expanded="true" signature="90:95" ph="..." />
+            <marker date="1536410922526" expanded="true" signature="383:439" ph="..." />
+            <marker date="1536410922526" expanded="true" signature="459:607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Metadata/model">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Metadata/model.cos.labels.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Metadata/model.cos.reverse_index.csv">
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="85935">
+          <caret column="670363" selection-start-column="670363" selection-end-column="670363" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1004144" selection-start-column="1004144" selection-end-column="1004144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Metadata/vectors.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31588" lean-forward="true" selection-start-line="10" selection-start-column="31588" selection-end-line="10" selection-end-column="31588" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Metadata/model.cos.lengths.json">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tools/ReverseIndex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
           <folding>
             <element signature="e#47#78#0" expanded="true" />
-            <marker date="1535219794254" expanded="true" signature="111:116" ph="..." />
+            <marker date="1536415612266" expanded="true" signature="112:117" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/VectorizeTFIDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#46#57#0" expanded="true" />
+            <marker date="1536418369905" expanded="true" signature="113:114" ph="..." />
+            <marker date="1536418369905" expanded="true" signature="486:492" ph="..." />
+            <marker date="1536418369905" expanded="true" signature="1033:1034" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf76.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="7964" column="18" selection-start-line="7964" selection-start-column="9" selection-end-line="7964" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf77.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf75.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf79.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf78.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="7233" column="10" selection-start-line="7233" selection-start-column="10" selection-end-line="7233" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/Document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="50" />
           <folding>
-            <element signature="e#47#78#0" expanded="true" />
+            <element signature="e#47#80#0" expanded="true" />
+            <marker date="1536418784383" expanded="true" signature="265:327" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Documents/cf74.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="45" column="35" selection-start-line="43" selection-start-column="18" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#47#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/EvaluatorData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="109" selection-start-line="21" selection-start-column="109" selection-end-line="21" selection-end-column="109" />
+          <folding>
+            <element signature="e#47#80#0" expanded="true" />
+            <marker date="1536428280438" expanded="true" signature="302:891" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/cfquery.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="e#47#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/ModelCos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+            <marker date="1536432637236" expanded="true" signature="181:186" ph="..." />
+            <marker date="1536432637236" expanded="true" signature="973:1461" ph="..." />
           </folding>
         </state>
       </provider>

@@ -14,5 +14,5 @@ documents:
 preprocessing:
   stemmer: true
   min_word_size: 2
-path_to_vectors: Data/Metadata/vectors.csv
+documents_path: Data/Metadata/documents.json
 models_path: Data/Metadata/model

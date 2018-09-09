@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*
 
 import math
+from Tools.Logger import logger
 
 
 class VectorizeTFIDF:
@@ -9,7 +10,14 @@ class VectorizeTFIDF:
         self.reverseIndex = reverse_index
 
     def vectorize(self, docs_tokens):
-        return [self.terms_to_dev(terms) for terms in docs_tokens]
+        results = []
+        total = len(docs_tokens)
+
+        for index in range(total):
+            results.append(self.terms_to_dev(docs_tokens[index]))
+            logger.info("vectorize document {}/{}".format(index, total))
+
+        return results
 
     @staticmethod
     def _tf(term, terms):
@@ -22,7 +30,12 @@ class VectorizeTFIDF:
         return self._tf(term, terms) * self._idf(term)
 
     def terms_to_dev(self, terms):
-        return [self._tfidf(word, terms) for word in self.reverseIndex.words]
+        results = []
+
+        for word in self.reverseIndex.words:
+            results.append(self._tfidf(word, terms))
+
+        return results
 
 
 def vectorize(reverse_index, docs_tokens):

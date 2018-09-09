@@ -10,7 +10,8 @@ class Document:
 
     @classmethod
     def load_documents(cls, filename):
-        return pd.read_csv(filename)
+        logger.info("Load Documents {}".format(filename))
+        return pd.read_json(filename, orient='records')
 
     @classmethod
     def parse_many(cls, filenames):

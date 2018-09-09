@@ -51,14 +51,6 @@ class Model:
 
     def calc_cos_lengths(self, X):
         return [self.calc_cos_length(x) for x in X]
-        # cos_lengths = []
-        #
-        # for index in range(len(X)):
-        #     zeros = np.zeros(len(X[index]))
-        #     zeros[index] = self.calc_cos_length(X[index])
-        #     cos_lengths.append(zeros)
-        #
-        # self.cos_lengths = np.array(cos_lengths)
 
     def calc_cos_length(self, doc):
         summed = sum([math.pow(weight, 2) for weight in doc])
@@ -76,4 +68,4 @@ class Model:
         results = [[self.y[index], summeds[index] / div[index]] for index in range(len(summeds))]
         results.sort(reverse=True, key=lambda x: x[1])
 
-        return results
+        return [r for r in results]
