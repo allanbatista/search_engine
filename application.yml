@@ -1,0 +1,20 @@
+---
+version: 0.0.2
+loglevel: INFO
+#logpath: Logs/application.log
+reverse_index:
+  filename: Data/Metadata/reverse_index.csv
+documents:
+  - Data/Documents/cf74.xml
+  - Data/Documents/cf75.xml
+  - Data/Documents/cf76.xml
+  - Data/Documents/cf77.xml
+  - Data/Documents/cf78.xml
+  - Data/Documents/cf79.xml
+preprocessing:
+  stemmer: true
+  min_word_size: 2
+model_path: Data/Metadata/Similarity.{class_name}.json
+reverse_index_path: Data/Metadata/ReverseIndex.json
+documents_path: Data/Metadata/Document.json
+evaluation_query_path: Data/cfquery.xml
